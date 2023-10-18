@@ -1,9 +1,80 @@
 body{
     padding: 0;
     margin: 0;
+    /* Might Delet */
+}
+ul{
+    margin: o;
+    padding: 0;
+    list-style-type: none;
+}
+li{
+    display: inline-block;
 }
 a{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    
+    color: black;
+}
+span, a, h1, p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 1200px;
+    background-color: #ececec;
+    margin: 0 auto;
+}
+
+
+/* start header style */
+header{
+    background-color: white;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+header .container .nav{
+    display: inline-block;
+}
+
+header .container .nav li{
+    position: relative;
+}
+
+header .container .nav>ul>li{
+    margin-left: 10px;
+}
+
+header .container .nav>ul>li>a{
+    padding: 10px;
+}
+header .container .nav>ul>li>a:hover{
+    color: #8490ff;
+}
+
+header .container .nav>ul>li>ul{
+    background-color: #8490ff;
+    position: absolute;
+    top: calc(100% + 23px);
+    right: 0;
+    width: max-content;
+    padding: 10px;
+    display: none;
+}
+header .container .nav>ul>li:hover ul{
+    display: block;
+}
+
+
+header .container .nav>ul>li>ul>li{
+    display: flex;
+    padding: 10px 7px;
+    padding-right: 100px;
+}
+header .container .nav>ul>li> ul:hover li{
+    display: block;
 }
